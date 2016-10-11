@@ -60,7 +60,7 @@ model decisions
 
 #### 2.2.1 Parameters
 
-In the CRB model, the land cover distribution is specified based on the 2001 National Land Cover Database developed by @homer_completion_2007. In the CRB, there are primarily **n** different types of land covers (Figure **N**). The majority of the basin is covered by (used for) **TYPE**. 
+In the CRB model, the land cover distribution is specified based on the 2001 National Land Cover Database developed by @homer_completion_2007. In the CRB, there are primarily **n** different types of land covers (figure **N**). The majority of the basin is covered by (used for) **TYPE**. 
 
 ```
 **TODO** distribution of land covers
@@ -72,9 +72,7 @@ In the CRB model, the land cover distribution is specified based on the 2001 Nat
 
 soil (SUGGRO data set) 
 
-```
-**TODO** soil distribution map
-```
+![Water storage capacity of soil layers](fig-soil-dis.png)
 
 ```
 **TODO** Table showing parameters associated with soil
@@ -82,26 +80,21 @@ soil (SUGGRO data set)
 
 Soil hydraulic properties calculated based on pedotransfer functions
 
-```
-**TODO** 1:1 plot showing predicted vs measured soil moisture at 1/3 bar and 15 bar based on the pedotransfer function
-```
+![Observed and predicted soil moisture at -1/3 bar (wet end) and -15 bar (dry end)](fig_brooks_corey.png)
 
 Other parameters
 
 
 
 #### 2.2.2 Forcing Data
-Blivneh data set description. (include NLDAS dataset 1981 ~ present?)
-Disaggregation (M). 
-Area averaging
+The 1/16 degree forcing data set, including the daily precipitation, minimum and maximum temperature as well as wind speed was developed by @livneh_long-term_2013. The daily forcing dataset is further disaggregated to an hourly intervel using the Mountain MicroClimate simulator (MTCLIM) [@united_states_department_of_agriculture_forest_service_mtclim:_1989; @kimball_improved_1997; @thornton_improved_1999]. Meanwhile, the hourly air pressure, specific humidity, and incoming shortwave and longwave radiation are also derived by MTCLIM. For the HRU-based discritization, the forcing data are averaged based on their areas interceting the HRUs.
 
-A [linked phrase][link1]
 
 
 #### 2.2.3 Model Experiment
 In this study, two modeling experiments are conducted with SUMMA. These two expriments are used to test the fexibility of SUMMA in differnt aspects naming the spatial structure and process parameterization, respectively. 
 
-In the first experiment, the CRB is discretized into a 1/16 degree grid and a hru-based grid. The 1/16 degree cell-based grid is aligned with the grid used by Blinved's. There are 23XXX active grid cells in the CRB. The cell-based grids are the primari spatial structure used in land surface models (**CITE**: refs like CLM) and hydrologic models (**CITE**: refs like DHSVM). The advantage of cell-based grids are 1. easy to develop 2. most used format in many data (**CITE**: refs like NLDAS). On the other hand, a HRU-bsed grid is developed baed on United State Geologic Survey Geospatial Fabric [@viger_gis_2014; -@roland_j._viger_preliminary_2014]. AS a result, there are 11723 HRUs in the CRB. The HRU-bsed grid is another popular discritization used in many other hydrologic models (**CITE**: refs like USGS Precipitation Runoff Modeling System (PRMS) or SWAT). It assumes that hydrologic features such as the land cover, topography, and subsurface characteristics are uniformly distributed in the HRU unit. The HRU-based grid is superior to the cell-based grid in more precise representation of hydrologic characteristics. 
+In the first experiment, the CRB is discretized into a 1/16 degree grid and a hru-based grid. The 1/16 degree cell-based grid is aligned with the grid used by Blinved's. There are 23XXX active grid cells in the CRB. The cell-based grids are the primari spatial structure used in land surface models (**CITE**: refs like CLM) and hydrologic models (**CITE**: refs like DHSVM). The advantage of cell-based grids are 1. easy to develop 2. most used format in many data (**CITE**: refs like NLDAS). On the other hand, a HRU-bsed grid is developed baed on United State Geologic Survey Geospatial Fabric [@viger_gis_2014; @roland_j._viger_preliminary_2014]. AS a result, there are 11723 HRUs in the CRB. The HRU-bsed grid is another popular discritization used in many other hydrologic models (**CITE**: refs like USGS Precipitation Runoff Modeling System (PRMS) or SWAT). It assumes that hydrologic features such as the land cover, topography, and subsurface characteristics are uniformly distributed in the HRU unit. The HRU-based grid is superior to the cell-based grid in more precise representation of hydrologic characteristics. 
 
 ```
 **TODO**: a figure showing HRU and Cell (A HRU can be bigger or smaller than a Cell)
