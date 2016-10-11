@@ -101,7 +101,7 @@ A [linked phrase][link1]
 #### 2.2.3 Model Experiment
 In this study, two modeling experiments are conducted with SUMMA. These two expriments are used to test the fexibility of SUMMA in differnt aspects naming the spatial structure and process parameterization, respectively. 
 
-In the first experiment, the CRB is discretized into a 1/16 degree grid and a hru-based grid. The 1/16 degree cell-based grid is aligned with the grid used by Blinved's. There are 23XXX active grid cells in the CRB. The cell-based grids are the primari spatial structure used in land surface models (**CITE**: refs like CLM) and hydrologic models (**CITE**: refs like DHSVM). The advantage of cell-based grids are 1. easy to develop 2. most used format in many data (**CITE**: refs like NLDAS). On the other hand, a HRU-bsed grid is developed baed on United State Geologic Survey Geospatial Fabric. AS a result, there are 11723 HRUs in the CRB. The HRU-bsed grid is another popular discritization used in many other hydrologic models (**CITE**: refs like USGS Precipitation Runoff Modeling System (PRMS) or SWAT). It assumes that hydrologic features such as the land cover, topography, and subsurface characteristics are uniformly distributed in the HRU unit. The HRU-based grid is superior to the cell-based grid in more precise representation of hydrologic characteristics. 
+In the first experiment, the CRB is discretized into a 1/16 degree grid and a hru-based grid. The 1/16 degree cell-based grid is aligned with the grid used by Blinved's. There are 23XXX active grid cells in the CRB. The cell-based grids are the primari spatial structure used in land surface models (**CITE**: refs like CLM) and hydrologic models (**CITE**: refs like DHSVM). The advantage of cell-based grids are 1. easy to develop 2. most used format in many data (**CITE**: refs like NLDAS). On the other hand, a HRU-bsed grid is developed baed on United State Geologic Survey Geospatial Fabric [@viger_gis_2014; -@roland_j._viger_preliminary_2014]. AS a result, there are 11723 HRUs in the CRB. The HRU-bsed grid is another popular discritization used in many other hydrologic models (**CITE**: refs like USGS Precipitation Runoff Modeling System (PRMS) or SWAT). It assumes that hydrologic features such as the land cover, topography, and subsurface characteristics are uniformly distributed in the HRU unit. The HRU-based grid is superior to the cell-based grid in more precise representation of hydrologic characteristics. 
 
 ```
 **TODO**: a figure showing HRU and Cell (A HRU can be bigger or smaller than a Cell)
@@ -131,7 +131,7 @@ Impact of different baseflow parameterization
 Summary of the paper, future study
 
 <!--- figures --->
-
+ 
 <!--- reference --->
 [link1]: http://example.com/ "Homer, C., Dewitz, J., Fry, J., Coan, M., Hossain, N., Larson, C., McKerrow, A., VanDriel, J.N., Wickham, J., 2007. Completion of the 2001 National Land Cover Database for the Conterminous United States. Photogrammetric Engineering and Remote Sensing 73."
 
