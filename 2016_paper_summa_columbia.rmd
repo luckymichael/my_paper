@@ -36,7 +36,7 @@ The Structure for Unifying Multiple Modeling Alternatives (SUMMA) model was deve
 
 SUMMA has been under active ongoing development by the developer team. what have done (applications in clark2015a,b) . only point/field application [@clark_unified_2015-1].
 
-In this study, our objective is to demonstrate the first large domain application of SUMMA to the Columbia River Basin (CRB) and the flexibility of SUMMA. The CRB model is driven by the daily forcing data developed by blivneh (**CITE** 2013) for the simulation period between 1915 and 2011. The CRB is discretized into a 1/16 cell-based grid as well as a HRU-based grid. `**TODO** the options are used to test its impact on the runoff?/snow?`
+In this study, our objective is to demonstrate the first large domain application of SUMMA, specifically to the Columbia River Basin (CRB), as well as the flexibility of SUMMA in a real case study. The CRB model is driven by the daily forcing data developed by blivneh (**CITE** 2013) for the simulation period between 1915 and 2011. The CRB is discretized into a 1/16 cell-based grid as well as a HRU-based grid. `**TODO** the options are used to test its impact on the runoff?/snow?`
 
 
 
