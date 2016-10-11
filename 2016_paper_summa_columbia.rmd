@@ -19,7 +19,7 @@ part2: what I do
 
 part3: results showing what
 
-part4: concluding (summa is good. but still need what work.)
+part4: concluding 
 
 <!--- selected different parameterization / different spatial discretizations / different forcing dataset) --->
 <!---
@@ -29,19 +29,18 @@ The simulation results are compared to simulations with the Variable Infiltratio
 ## 1 Introduction
 Hydrologic modeling involves a series of decisions made by the model developers, ranging from data preparation, conceptulization, and numerical solutions and so on [@clark_unified_2015]. 
 Though these decisions are such important that can greatly impact or even determine the modeling performance, besides data limitation and modeling purposes, these decisions made by hydrologic model developers are also largely dependent on model developers' intuition and previous experience. Therefore, a variety of models have been developed in the past few decades. On one hand, they provide options for particular modeling area and purpose. 
-On the other hand, testing model decisions is made an emerging enormous challenge in hydrologic modeling as data, process rerpersentation, and numeirc methods have been becoming increasingly available.  
+On the other hand, testing model decisions is made an emerging enormous challenge in hydrologic modeling as data, process rerpersentation, and numeirc methods have been becoming increasingly available.
 This underlines the need of a tool that can provide flexibility of specifying different model decisions such as process representation, spatial architecture and numerical solver. 
 
 The Structure for Unifying Multiple Modeling Alternatives (SUMMA) model was developed by Clark et al [@clark_unified_2015; -@clark_unified_2015-1] for tackling such chanllenges. purpose. general apporach
 
-SUMMA has been under active ongoing development by the developer team. what have done (applications in clark2015a,b) . only point/field application [@clark_unified_2015-1].
+SUMMA has been under active ongoing development by the developer team. what have done (applications in clark2015a,b) . only point/field application [@clark_unified_2015-1]. It is important to evaluate the capability of SUMMA for large domain applications. Particularly, we are interested in SUMMA's flexibility of spatial 
 
-In this study, our objective is to demonstrate the first large domain application of SUMMA, specifically to the Columbia River Basin (CRB), as well as the flexibility of SUMMA in a real case study. The CRB model is driven by the daily forcing data developed by blivneh (**CITE** 2013) for the simulation period between 1915 and 2011. The CRB is discretized into a 1/16 cell-based grid as well as a HRU-based grid. `**TODO** the options are used to test its impact on the runoff?/snow?`
+In this study, our objective is to demonstrate the first long-term and large-domain application of SUMMA, specifically to the Columbia River Basin (CRB), as well as the flexibility of SUMMA in a real case study. The CRB model is driven by the daily forcing data developed by blivneh (**CITE** 2013) for the simulation period between 1915 and 2011. The CRB is discretized into a 1/16 cell-based grid as well as a HRU-based grid. `**TODO** the options are used to test its impact on the runoff?/snow?`. A brief introduction of SUMMA is given in Section 2. The data and model . The simulated results are compared to the observations and 
 
 
 
 ## 2 Methods
-
 
 ### 2.1 SUMMA Model Description
 
@@ -87,7 +86,7 @@ Other parameters
 
 
 #### 2.2.2 Forcing Data
-The 1/16 degree forcing data set, including the daily precipitation, minimum and maximum temperature as well as wind speed was developed by @livneh_long-term_2013. The daily forcing dataset is further disaggregated to an hourly intervel using the Mountain MicroClimate simulator (MTCLIM) [@united_states_department_of_agriculture_forest_service_mtclim:_1989; @kimball_improved_1997; @thornton_improved_1999]. Meanwhile, the hourly air pressure, specific humidity, and incoming shortwave and longwave radiation are also derived by MTCLIM. For the HRU-based discritization, the forcing data are averaged based on their areas interceting the HRUs.
+The atmospheric forcing data for driving SUMMA include precipitation, air temperature, air pressure, specific humidity, wind speed, incoming shortwave and longwave radiations. The time step of the forcing data is artitrary but in this study, an hourly time step is used. The hourly forcing data is derived from a 1/16 degree forcing data set, including the daily precipitation, minimum and maximum temperature as well as wind speed developed by @livneh_long-term_2013. The daily forcing dataset is further disaggregated to an hourly intervel using the Mountain MicroClimate simulator (MTCLIM) [@united_states_department_of_agriculture_forest_service_mtclim:_1989; @kimball_improved_1997; @thornton_improved_1999]. Meanwhile, the hourly air pressure, specific humidity, and incoming shortwave and longwave radiation are also derived by MTCLIM. For the HRU-based discritization, the forcing data are averaged based on their areas interceted with the HRUs.
 
 
 
