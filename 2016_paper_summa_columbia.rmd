@@ -1,0 +1,102 @@
+---
+title: "**TODO**: title"
+author: "Michael Ou, Bart Nijssen, Grey Nearing, Andy Newman, Naoki Mizukami, Martyn Clark"
+date: "September 12, 2016"
+output: word_document
+---
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Abstract
+**TODO: abastract**
+
+part1: some introduction
+
+part2: what I do
+
+part3: results showing what
+
+part4: concluding (summa is good. but still need what work.)
+
+<!--- selected different parameterization / different spatial discretizations / different forcing dataset) --->
+<!---
+The simulation results are compared to simulations with the Variable Infiltration Capacity (VIC) model and the Precipitation Runoff Modeling System (PRMS). We are particularly interested in SUMMA’s capability to mimic model behaviors of the other two models through the selection of appropriate model parameterizations in SUMMA.
+--->
+
+## 1 Introduction
+Hydrologic modeling involves a series of decisions made by the modeler, ranging from data preparation, conceptulization, and numerical solutions and so on (**CITE**: Clark et al 2015a). 
+Though these decisions are such important that can greatly impact or even determine the modeling performance, hydrologic modelers made these decision largely depending on, besides data limitation, their intuition or previous experience. 
+Testing model decisions is an emerging enormous challenge in hydrologic modeling as data, process rerpersentation, and numeirc methods have been becoming increasingly available.  is an important approach to understand the physical processes as well as for water management purposes. general background/motivation of SUMMA. The need of a tool that can provide flexibility of process representation, spatial architecture, numerical solver. 
+
+The Structure for Unifying Multiple Modeling Alternatives (SUMMA) model was developed by Clark et al (**CITE** 2015a, 2015b) for tackling such chanllenges. purpose. general apporach
+
+status, what have done (applications in clark2015a,b) 
+
+this study: first large scale application of SUMMA
+
+
+
+## 2 Methods
+
+
+### 2.1 SUMMA Model Description
+
+Conceptualization and model decisions (figure 3 of clark2015a) 
+
+hydrology equations
+
+energy equations
+
+model decisions
+
+
+### 2.2 Data and Model Experiment
+
+#### 2.2.1 Parameters
+
+vegetation (2001 National Land Cover Database)
+
+soil (SUGGRO data set) 
+
+Soil hydraulic properties calculated based on pedotransfer functions
+
+Table important parameters used in the simulation
+
+#### 2.2.2 Forcing Data
+Blivneh data set description. (include NLDAS dataset 1981 ~ present?)
+Disaggregation (M). 
+Area averaging
+
+
+#### 2.2.3 Model Experiment
+In this study, two modeling experiments are conducted with SUMMA. These two expriments are used to test the fexibility of SUMMA in differnt aspects naming the spatial structure and process parameterization, respectively. 
+
+In the first experiment, the CRB is discretized into a 1/16 degree grid and a hru-based grid. The 1/16 degree cell-based grid is aligned with the grid used by Blinved's. There are 23XXX active grid cells in the CRB. The cell-based grids are the primari spatial structure used in land surface models (**CITE**: refs like CLM) and hydrologic models (**CITE**: refs like DHSVM). The advantage of cell-based grids are 1. easy to develop 2. most used format in many data (**CITE**: refs like NLDAS). On the other hand, a HRU-bsed grid is developed baed on United State Geologic Survey Geospatial Fabric. AS a result, there are 11723 HRUs in the CRB. The HRU-bsed grid is another popular discritization used in many other hydrologic models (**CITE**: refs like USGS Precipitation Runoff Modeling System (PRMS) or SWAT). It assumes that hydrologic features such as the land cover, topography, and subsurface characteristics are uniformly distributed in the HRU unit. The HRU-based grid is superior to the cell-based grid in more precise representation of hydrologic characteristics. 
+
+```
+**TODO**: a figure showing HRU and Cell (A HRU can be bigger or smaller than a Cell)
+```
+
+In the second experiment, 
+`**TODO**: discuss with Martyn on what modeling decision to test in CRB (snow melt?)`
+
+```
+**TODO**: a figure showing snow cover change in columbia river basin ()
+```
+
+
+## 3 Results and Discussion
+
+Temperature, snow, evaporation, surface runoff compared with VIC and Observed?
+Impact of spatial discretization (more important for routing?)
+Impact of different baseflow parameterization
+
+
+
+
+
+
+
+## 4 Conclusion
+Summary of the paper, future study
