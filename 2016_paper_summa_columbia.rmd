@@ -43,6 +43,7 @@ this study: first large scale application of SUMMA
 ### 2.1 SUMMA Model Description
 
 Conceptualization and model decisions (figure 3 of clark2015a) 
+![alt text][fig_summa_process_decisions]
 
 hydrology equations
 
@@ -100,3 +101,6 @@ Impact of different baseflow parameterization
 
 ## 4 Conclusion
 Summary of the paper, future study
+
+<!--- figures --->
+[fig_summa_process_decisions]: fig_summa_process_decisions.png "SUMMA Process Flexibility"
