@@ -3,10 +3,12 @@ title: "**TODO**: title"
 author: "Michael Ou, Bart Nijssen, Grey Nearing, Andy Newman, Naoki Mizukami, Martyn Clark"
 date: "September 12, 2016"
 output: word_document
+bibliography: SUMMA_Columbia.bib
 ---
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
+------
 
 ## Abstract
 **TODO: abastract**
@@ -25,15 +27,16 @@ The simulation results are compared to simulations with the Variable Infiltratio
 --->
 
 ## 1 Introduction
-Hydrologic modeling involves a series of decisions made by the modeler, ranging from data preparation, conceptulization, and numerical solutions and so on (**CITE**: Clark et al 2015a). 
-Though these decisions are such important that can greatly impact or even determine the modeling performance, hydrologic modelers made these decision largely depending on, besides data limitation, their intuition or previous experience. 
-Testing model decisions is an emerging enormous challenge in hydrologic modeling as data, process rerpersentation, and numeirc methods have been becoming increasingly available.  is an important approach to understand the physical processes as well as for water management purposes. general background/motivation of SUMMA. The need of a tool that can provide flexibility of process representation, spatial architecture, numerical solver. 
+Hydrologic modeling involves a series of decisions made by the model developers, ranging from data preparation, conceptulization, and numerical solutions and so on [@clark_unified_2015]. 
+Though these decisions are such important that can greatly impact or even determine the modeling performance, besides data limitation and modeling purposes, these decisions made by hydrologic model developers are also largely dependent on model developers' intuition and previous experience. Therefore, a variety of models have been developed in the past few decades. On one hand, they provide options for particular modeling area and purpose. 
+On the other hand, testing model decisions is made an emerging enormous challenge in hydrologic modeling as data, process rerpersentation, and numeirc methods have been becoming increasingly available.  
+This underlines the need of a tool that can provide flexibility of specifying different model decisions such as process representation, spatial architecture and numerical solver. 
 
-The Structure for Unifying Multiple Modeling Alternatives (SUMMA) model was developed by Clark et al (**CITE** 2015a, 2015b) for tackling such chanllenges. purpose. general apporach
+The Structure for Unifying Multiple Modeling Alternatives (SUMMA) model was developed by Clark et al [@clark_unified_2015; -@clark_unified_2015-1] for tackling such chanllenges. purpose. general apporach
 
-status, what have done (applications in clark2015a,b) 
+SUMMA has been under active ongoing development by the developer team. what have done (applications in clark2015a,b) . only point/field application [@clark_unified_2015-1].
 
-this study: first large scale application of SUMMA
+In this study, our objective is to demonstrate the first large domain application of SUMMA to the Columbia River Basin (CRB) and the flexibility of SUMMA. The CRB model is driven by the daily forcing data developed by blivneh (**CITE** 2013) for the simulation period between 1915 and 2011. The CRB is discretized into a 1/16 cell-based grid as well as a HRU-based grid. `**TODO** the options are used to test its impact on the runoff?/snow?`
 
 
 
@@ -43,7 +46,8 @@ this study: first large scale application of SUMMA
 ### 2.1 SUMMA Model Description
 
 Conceptualization and model decisions (figure 3 of clark2015a) 
-![alt text][fig_summa_process_decisions]
+
+![SUMMA Process Flexibility (Modified based on @clark_unified_2015)](fig_summa_process_decisions.png)
 
 hydrology equations
 
@@ -56,18 +60,42 @@ model decisions
 
 #### 2.2.1 Parameters
 
-vegetation (2001 National Land Cover Database)
+In the CRB model, the land cover distribution is specified based on the 2001 National Land Cover Database developed by @homer_completion_2007. In the CRB, there are primarily **n** different types of land covers (Figure **N**). The majority of the basin is covered by (used for) **TYPE**. 
+
+```
+**TODO** distribution of land covers
+```
+
+```
+**TODO** Table showing parameters associated with land cover
+```
 
 soil (SUGGRO data set) 
 
+```
+**TODO** soil distribution map
+```
+
+```
+**TODO** Table showing parameters associated with soil
+```
+
 Soil hydraulic properties calculated based on pedotransfer functions
 
-Table important parameters used in the simulation
+```
+**TODO** 1:1 plot showing predicted vs measured soil moisture at 1/3 bar and 15 bar based on the pedotransfer function
+```
+
+Other parameters
+
+
 
 #### 2.2.2 Forcing Data
 Blivneh data set description. (include NLDAS dataset 1981 ~ present?)
 Disaggregation (M). 
 Area averaging
+
+A [linked phrase][link1]
 
 
 #### 2.2.3 Model Experiment
@@ -103,4 +131,9 @@ Impact of different baseflow parameterization
 Summary of the paper, future study
 
 <!--- figures --->
-[fig_summa_process_decisions]: fig_summa_process_decisions.png "SUMMA Process Flexibility"
+
+<!--- reference --->
+[link1]: http://example.com/ "Homer, C., Dewitz, J., Fry, J., Coan, M., Hossain, N., Larson, C., McKerrow, A., VanDriel, J.N., Wickham, J., 2007. Completion of the 2001 National Land Cover Database for the Conterminous United States. Photogrammetric Engineering and Remote Sensing 73."
+
+## References
+
